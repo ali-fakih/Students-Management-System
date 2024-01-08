@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color:#001;
+}
+
+.profile{
+    display: none; 
+}
+.menu{
+    background: #123;
+    width:260px;
+    height: 100vh;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li a{
+    width
+}

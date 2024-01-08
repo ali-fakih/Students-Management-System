@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color:#171822;
+}
+
+.profile{
+    display: none; 
+}
+.menu

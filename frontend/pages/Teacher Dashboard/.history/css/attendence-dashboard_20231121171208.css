@@ -1,0 +1,16 @@
+.container{
+    display:flex;
+}
+
+/* Main Section */
+.main{
+    position: relative;
+    padding:20px;
+    width: 100%;
+}
+
+.main-top{
+    display:flex;
+    width:100%;
+}
+.main-top

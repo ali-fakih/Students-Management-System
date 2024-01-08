@@ -1,0 +1,299 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+/* --------------------------
+  Menu section starts 
+----------------------------*/
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 15px;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.menu {
+    background: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+.profile-page{
+    margin: 0;
+    padding: 10px;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+
+ul li a:hover,
+.active {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #f44949;
+}
+
+ul li a i {
+    font-size: 25px;
+}
+/* --------------------
+  Menu section ends  
+----------------------------*/
+
+
+/*-------------------------
+    Profile Section begin
+---------------------------*/
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+}
+
+.content-container {
+    width: 100%;
+}
+
+
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Adjust the direction to be column */
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .top {
+    display: flex;
+    align-items: center; /* Align items to the center */
+    gap: 15px;
+    margin-left: 0px;
+}
+
+.profile .top .profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    margin-left: 0px;
+}
+
+.profile .top img {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .top .para-detials p b{
+    color:#f44949;
+}
+
+.profile .top .para-detials .text-muted{
+    color:gray;
+    margin-left: 10px;
+}
+
+.profile p {
+    font-size: 15px;
+    margin: 0; /* Reset default margin for p element */
+}
+
+/*-------------------------
+    Profile Section end
+---------------------------*/
+
+
+/*-------------------------
+    About Section begin
+---------------------------*/
+
+/* Additional styles for the profile details in .about */
+.profile .about h5 {
+    color: #f44949;
+    margin-bottom: 10px;
+}
+
+.profile .about p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile .about {
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.about p i {
+    margin-left: 10px;
+}
+
+/*-------------------------
+    about Section ends
+---------------------------*/
+
+/*------------------------
+  Schedule Section starts
+-------------------------*/
+
+/* Add the following styles for the nav-tabs */
+ul.nav.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f44949;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+/* Adjust the styles for the nav-item and nav-link */
+ul.nav.nav-tabs li.nav-item {
+    border-right: 1px solid #ebebeb;
+    flex-grow: 1;
+    text-align: center;
+    border-top-right-radius: 20px;
+
+}
+
+ul.nav.nav-tabs li.nav-item:last-child {
+    border-right: none;
+}
+/* for the content inside the nav tab*/
+ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 14px 15px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link.active {
+    border-radius: 2px;
+    /* border-color: #e7e7e8; */
+    border-bottom: none;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link.active h5,
+ul.nav.nav-tabs li.nav-item a.nav-link.active p {
+    color: #ffffff;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link h5 {
+    color: #171822;
+    font-weight: 600;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link p {
+    margin-bottom: 0;
+}
+
+
+.schedule-table-content table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #f44949; /* Add border to the tables */
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+.schedule-table-content td.event-time{
+    background-color:#f44949;
+}
+
+.schedule-table-content td.break.hover-bg {
+    color: #f44949;
+}
+
+
+
+.schedule-table-content th,
+.schedule-table-content td {
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    text-align: center;
+    background-color:#171822;
+    border-radius:5px;
+
+}
+
+.schedule-table-content th {
+    background-color: #f44949
+}
+
+.schedule-tab .tab-content .tab-pane {
+    width: 100%; /* Set a fixed width for the tables */
+    display: none; /* Hide all tables initially */
+}
+
+.schedule-tab .tab-content .tab-pane.active {
+    display: block; /* Display the active table */
+}
+
+/*------------------------
+  Schedule Section ends
+-------------------------*/
+
+

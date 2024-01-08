@@ -1,0 +1,52 @@
+.profile {
+    display: flex;
+    flex-direction: column; /* Adjust the direction to be column */
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .top {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    display: flex;
+    align-items: flex-start; /* Align items to the start (left) */
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile .top img {
+    width: 100%;
+    align-self: flex-start;
+    border-radius: 40%;
+   
+}
+
+.profile .top .para-detials {
+    color:green;
+    margin-left: 100px;
+}
+
+
+.profile p {
+    font-size: 15px;
+    margin: 0; /* Reset default margin for p element */
+}
+
+/* Additional styles for the profile details in .about */
+.profile .about h5 {
+    color: #f44949;
+    margin-bottom: 10px;
+}
+
+.profile .about p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile .about {
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}

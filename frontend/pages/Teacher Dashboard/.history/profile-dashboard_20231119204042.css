@@ -1,0 +1,431 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+/* --------------------------
+  Menu section starts 
+----------------------------*/
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 15px;
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    flex-shrink: 0;
+}
+
+.img-box img {
+    width: 100%;
+}
+
+.menu {
+    background: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+.profile-page{
+    margin: 0;
+    padding: 10px;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+
+ul li a:hover,
+.active {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #f44949;
+}
+
+ul li a i {
+    font-size: 25px;
+}
+/* --------------------
+  Menu section ends  
+----------------------------*/
+
+
+/*-------------------------
+    Profile Section begin
+---------------------------*/
+
+
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Adjust the direction to be column */
+    align-items: center;
+    gap: 10px;
+    width:300px;
+}
+
+.profile .top {
+    display: flex;
+    align-items: center; /* Align items to the center */
+    gap: 15px;
+    margin-left: 0px;
+}
+
+.profile .top .profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    margin-left: 0px;
+}
+
+.profile .top img {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile .top .para-detials p b{
+    color:#f44949;
+}
+
+.profile .top .para-detials .text-muted{
+    color:gray;
+    margin-left: 10px;
+}
+
+.profile p {
+    font-size: 15px;
+    margin: 0; /* Reset default margin for p element */
+}
+
+/*-------------------------
+    Profile Section end
+---------------------------*/
+
+
+/*-------------------------
+    About Section begin
+---------------------------*/
+
+/* Additional styles for the profile details in .about */
+.profile .about h5 {
+    color: #f44949;
+    margin-bottom: 10px;
+}
+
+.profile .about p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profile .about {
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.about p i {
+    margin-left: 10px;
+}
+
+/*-------------------------
+    about Section ends
+---------------------------*/
+
+/*------------------------
+  Subject Section ends
+-------------------------*/
+.cont-skill{
+    
+}
+main{
+    position: relative;
+    margin-top: 1.4rem;
+}
+
+/*container that contain the skills cards*/
+main .subjects{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+    margin-bottom:20px;
+    margin-left:20px;
+}
+
+/* cards*/
+main .subjects > div{
+    background-color: #f44949;
+    padding: 5px;
+    margin-bottom: 1rem;
+    border-top-left-radius:15px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: white;
+    transition: all 300ms ease;
+
+}
+
+/* first and last Icons */
+main .subjects > div span{
+    padding: .5rem;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-size: 30px;
+}
+/*second and the forth Icon*/
+main .subjects > div.mth span,main .subjects > div.cg span{
+    color:whitesmoke;
+}
+/*third icon*/
+main .subjects > div.cs span{
+    color:whitesmoke;
+}
+
+/*name of the course or skill*/
+main .subjects h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 15px;
+    text-align:center;
+}
+
+main h2{
+    text-align:left;
+    margin-left:20px;
+}
+
+/*----------------------------------------
+ % and the circle for the skills starts
+------------------------------------------*/
+
+/* percentage of a skill */
+main .subjects .progress{
+    position: relative;
+    width: 89px;
+    height: 89px;
+    border-radius: 50%;
+    margin:auto;
+}
+
+/* % circle of the skill  */
+main .subjects svg circle{
+    fill: none;
+    stroke: darkblue;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
+}
+
+/*first circle for the first skill*/
+main .subjects .eg svg circle{
+    stroke-dashoffset: 25;
+    stroke-dasharray: 210;
+}
+
+/* second circle for the 2nd skill*/
+main .subjects .mth svg circle{
+    stroke-dashoffset: 7;
+    stroke-dasharray: 210;
+}
+
+/* 3rd circle for the 3rd skill*/
+main .subjects .cs svg circle{
+    stroke-dashoffset: 35;
+    stroke-dasharray: 210;
+}
+
+/* 4th circle for the 4tt skill*/
+main .subjects .cg svg circle{
+    stroke-dashoffset: 0;
+    stroke-dasharray: 210;
+}
+/* 5th circle for the 5th skill*/
+main .subjects .net svg circle{
+    stroke-dashoffset: 5;
+    stroke-dasharray: 210;
+}
+/*----------------------------------------
+   % and the circle for the skills endss
+------------------------------------------*/
+
+main .subjects .progress .number{
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* for experience in years*/
+main .subjects small{
+    margin-top: 1rem;
+    display: block;
+    text-align:center;
+    font-size:15px;
+    margin-bottom: 1rem;
+}
+
+/*-----------------------
+  Subject Section ends
+-------------------------*/
+
+/*------------------------
+  Schedule Section starts
+-------------------------*/
+
+/* Add the following styles for the nav-tabs */
+ul.nav.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f44949;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+/* Adjust the styles for the nav-item and nav-link */
+ul.nav.nav-tabs li.nav-item {
+    border-right: 1px solid #ebebeb;
+    flex-grow: 1;
+    text-align: center;
+    border-top-right-radius: 20px;
+
+}
+
+ul.nav.nav-tabs li.nav-item:last-child {
+    border-right: none;
+}
+/* for the content inside the nav tab*/
+ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 14px 15px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link.active {
+    border-radius: 2px;
+    /* border-color: #e7e7e8; */
+    border-bottom: none;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link.active h5,
+ul.nav.nav-tabs li.nav-item a.nav-link.active p {
+    color: #ffffff;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link h5 {
+    color: #171822;
+    font-weight: 600;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link p {
+    margin-bottom: 0;
+}
+
+
+.schedule-table-content table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #f44949; /* Add border to the tables */
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+.schedule-table-content td.event-time{
+    background-color:#f44949;
+}
+
+.schedule-table-content td.break.hover-bg {
+    color: #f44949;
+}
+
+
+
+.schedule-table-content th,
+.schedule-table-content td {
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    text-align: center;
+    background-color:#171822;
+    border-radius:5px;
+
+}
+
+.schedule-table-content th {
+    background-color: #f44949
+}
+
+.schedule-tab .tab-content .tab-pane {
+    width: 100%; /* Set a fixed width for the tables */
+    display: none; /* Hide all tables initially */
+}
+
+.schedule-tab .tab-content .tab-pane.active {
+    display: block; /* Display the active table */
+}
+
+/*------------------------
+  Schedule Section ends
+-------------------------*/
+
+

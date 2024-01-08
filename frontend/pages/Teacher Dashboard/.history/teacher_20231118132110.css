@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-color:#001;
+}
+
+.profile{
+    display: none; 
+}
+.menu{
+    background: #123;
+    width:260px;
+    height: 100vh;
+    padding: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+
+}
+
+ul li a:hover, .active{
+    background-color:#ffffff55;
+}
+
+.log-out{
+    position: absolute;
+}

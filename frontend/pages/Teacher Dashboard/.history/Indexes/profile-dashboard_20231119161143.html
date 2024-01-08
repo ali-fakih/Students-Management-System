@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard-menu.css">
+    <link rel="stylesheet" href="/css/profile-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Dashboard | Ali Fakih</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+
+            <li class="profile">
+                <div class="img-box">
+                    <img src="/images/teacher.jpg" alt="teacher image">
+                </div>
+                <h2>Ali Fakih</h2>
+            </li>
+            <li>
+                <a class="active" href="/Indexes/profile-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="/Indexes/courses-dashboard.html">
+                    <i class="fas fa-book"></i>
+                    <p>Courses</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-user-group"></i>
+                    <p>Students</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Indexes/quize-dashboard.html">
+                    <i class="fas fa-pencil-alt"></i>
+                    <p>Quizes</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Indexes/grades-dashboard.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>Grades</p>
+                </a>
+            </li>
+            <li>
+                <a href="/Indexes/assignments-dashboard.html">
+                    <i class="fas fa-tasks"></i>
+                    <p>Assignemts</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="/images/teacher.jpg" alt="" >
+                    </div>
+                    <div class="para-detials">
+                        <p>Hey, <b>Dr. Alex</b> </p>
+                        <small class="text-muted">12102030</small>
+                    </div>
+                </div>
+
+
+                <div class="about">
+                    <h5>Course</h5>
+                    <p>BTech. Computer Science & Engineering <i class="fas fa-pencil-alt"></i></p>
+                    <h5>DOB</h5>
+                    <p>29-Feb-2020 <i class="fas fa-pencil-alt"></i></p>
+                    <h5>Contact</h5>
+                    <p>1234567890 <i class="fas fa-pencil-alt"></i></p>
+                    <h5>Email</h5>
+                    <p>unknown@gmail.com <i class="fas fa-pencil-alt"></i></p>
+                    <h5>Address</h5>
+                    <p>Ghost town Road, New York, America <i class="fas fa-pencil-alt"></i></p>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+            <!-- Schedule Table Section Begin -->
+    <section class="schedule-table-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="schedule-table-tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Computer Engineering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Data Science</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Software Engineering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">Networking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-5" role="tab">Web Development</a>
+                            </li>
+                        </ul><!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="schedule-table-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    <strong>Monday</strong>
+                                                    <span>May 10, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Tuesday</strong>
+                                                    <span>May 11, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Wednesday</strong>
+                                                    <span>May 12, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Thursday</strong>
+                                                    <span>May 14, 2023</span>
+                                                </th>
+
+                                                <th>
+                                                    <strong>Friday</strong>
+                                                    <span>May 13, 2023</span>
+                                                </th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- First row  -->
+                                            <tr>
+                                                <td class="event-time">09:00AM - 10:30AM</td>
+                                                <td class="break hover-bg">
+                                                    <h5>Room 101</h5>
+                                                    <p><span>1st Year</span></p>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Room 102</h5>
+                                                    <p><span>M1</span></p>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Room 103</h5>
+                                                    <p><span>2nd Year</span></p>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Room 104</h5>
+                                                    <p><span>2nd Year</span></p>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Room 105</h5>
+                                                    <p><span>3rd Year</span></p>
+                                                </td>
+                                            </tr> 
+
+                                            <!-- Second row  -->
+
+                                            <tr>
+                                                <td class="event-time">11:00AM - 1:00PM</td>
+                                                <td class="hover-bg">
+                                                    <h5>Room 110</h5>
+                                                    <p><span>By</span> John Smith</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Room 111</h5>
+                                                    <p><span>By</span> Delia Mullins</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Room 112</h5>
+                                                    <p><span>By</span> Bryan Clark</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Room 113</h5>
+                                                    <p><span>By</span> Ida Manning</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">13:30</td>
+                                                <td class="hover-bg">
+                                                    <h5>Meet Up Marketing</h5>
+                                                    <p><span>By</span> Mc Cage</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Conect People</h5>
+                                                    <p><span>By</span> James Colon</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Maximize CEO</h5>
+                                                    <p><span>By</span> Elmer Dunn</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Martha Fuller</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">18:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Technology Future</h5>
+                                                    <p><span>By</span> Thomas Munoz</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Mattie Hanson</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Camping</h5>
+                                                    <p><span>By</span> Rachel Arnold</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Leonard Daniels</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="schedule-table-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    <strong>Day 1</strong>
+                                                    <span>May 16, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 2</strong>
+                                                    <span>May 17, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 3</strong>
+                                                    <span>May 18, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 4</strong>
+                                                    <span>May 19, 2023</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="event-time">15:00</td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">16:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Talking To Life</h5>
+                                                    <p><span>By</span> John Smith</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Delia Mullins</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Introduce Technology</h5>
+                                                    <p><span>By</span> Bryan Clark</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Marketing Design</h5>
+                                                    <p><span>By</span> Ida Manning</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">17:30</td>
+                                                <td class="hover-bg">
+                                                    <h5>Meet Up Marketing</h5>
+                                                    <p><span>By</span> Mc Cage</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Conect People</h5>
+                                                    <p><span>By</span> James Colon</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Maximize CEO</h5>
+                                                    <p><span>By</span> Elmer Dunn</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Martha Fuller</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">18:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Technology Future</h5>
+                                                    <p><span>By</span> Thomas Munoz</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Mattie Hanson</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Camping</h5>
+                                                    <p><span>By</span> Rachel Arnold</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Leonard Daniels</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="schedule-table-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    <strong>Day 1</strong>
+                                                    <span>May 20, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 2</strong>
+                                                    <span>May 21, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 3</strong>
+                                                    <span>May 22, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 4</strong>
+                                                    <span>May 23, 2023</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="event-time">16:00</td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">17:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Talking To Life</h5>
+                                                    <p><span>By</span> John Smith</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Delia Mullins</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Introduce Technology</h5>
+                                                    <p><span>By</span> Bryan Clark</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Marketing Design</h5>
+                                                    <p><span>By</span> Ida Manning</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">18:30</td>
+                                                <td class="hover-bg">
+                                                    <h5>Meet Up Marketing</h5>
+                                                    <p><span>By</span> Mc Cage</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Conect People</h5>
+                                                    <p><span>By</span> James Colon</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Maximize CEO</h5>
+                                                    <p><span>By</span> Elmer Dunn</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Martha Fuller</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">19:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Technology Future</h5>
+                                                    <p><span>By</span> Thomas Munoz</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Mattie Hanson</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Camping</h5>
+                                                    <p><span>By</span> Rachel Arnold</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Leonard Daniels</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-4" role="tabpanel">
+                                <div class="schedule-table-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    <strong>Day 1</strong>
+                                                    <span>May 24, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 2</strong>
+                                                    <span>May 25, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 3</strong>
+                                                    <span>May 26, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 4</strong>
+                                                    <span>May 27, 2023</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="event-time">09:00</td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">10:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Talking To Life</h5>
+                                                    <p><span>By</span> John Smith</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Delia Mullins</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Introduce Technology</h5>
+                                                    <p><span>By</span> Bryan Clark</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Marketing Design</h5>
+                                                    <p><span>By</span> Ida Manning</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">13:30</td>
+                                                <td class="hover-bg">
+                                                    <h5>Meet Up Marketing</h5>
+                                                    <p><span>By</span> Mc Cage</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Conect People</h5>
+                                                    <p><span>By</span> James Colon</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Maximize CEO</h5>
+                                                    <p><span>By</span> Elmer Dunn</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Martha Fuller</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">14:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Technology Future</h5>
+                                                    <p><span>By</span> Thomas Munoz</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Mattie Hanson</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Camping</h5>
+                                                    <p><span>By</span> Rachel Arnold</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Leonard Daniels</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-5" role="tabpanel">
+                                <div class="schedule-table-content">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th>
+                                                    <strong>Day 1</strong>
+                                                    <span>May 28, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 2</strong>
+                                                    <span>May 29, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 3</strong>
+                                                    <span>May 30, 2023</span>
+                                                </th>
+                                                <th>
+                                                    <strong>Day 4</strong>
+                                                    <span>May 31, 2023</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="event-time">20:00</td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                                <td class="break hover-bg">
+                                                    <h5>Coffee Break</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">22:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Talking To Life</h5>
+                                                    <p><span>By</span> John Smith</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Delia Mullins</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Introduce Technology</h5>
+                                                    <p><span>By</span> Bryan Clark</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Marketing Design</h5>
+                                                    <p><span>By</span> Ida Manning</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">23:30</td>
+                                                <td class="hover-bg">
+                                                    <h5>Meet Up Marketing</h5>
+                                                    <p><span>By</span> Mc Cage</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Conect People</h5>
+                                                    <p><span>By</span> James Colon</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Maximize CEO</h5>
+                                                    <p><span>By</span> Elmer Dunn</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Martha Fuller</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="event-time">24:00</td>
+                                                <td class="hover-bg">
+                                                    <h5>Technology Future</h5>
+                                                    <p><span>By</span> Thomas Munoz</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Reinventing Experiences</h5>
+                                                    <p><span>By</span> Mattie Hanson</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Camping</h5>
+                                                    <p><span>By</span> Rachel Arnold</p>
+                                                </td>
+                                                <td class="hover-bg">
+                                                    <h5>Social Website</h5>
+                                                    <p><span>By</span> Leonard Daniels</p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Schedule Table Section End -->
+    
+
+
+
+        <!-- <div class="right">
+            <div class="announcements">
+                <h2>Announcements</h2>
+                <div class="updates">
+                    <div class="message">
+                        <p> <b>Academic</b> Summer training internship with Live Projects.</p>
+                        <small class="text-muted">2 Minutes Ago</small>
+                    </div>
+                    <div class="message">
+                        <p> <b>Co-curricular</b> Global internship oportunity by Student organization.</p>
+                        <small class="text-muted">10 Minutes Ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>                
+    </div> -->
+
+
+
+    <script>
+        // Get references to the elements
+        const profileLink = document.querySelector('.profile a');
+        const menu = document.querySelector('.menu');
+        const aboutSection = document.querySelector('.about');
+    
+        // Add a click event listener to the Profile link
+        profileLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent the default behavior of the link
+    
+            // Toggle the visibility of the menu and the about section
+            menu.style.display = 'none'; // You can adjust this based on your styles
+            aboutSection.style.display = 'block'; // You can adjust this based on your styles
+        });
+    </script>
+
+</body>
+
+</html>

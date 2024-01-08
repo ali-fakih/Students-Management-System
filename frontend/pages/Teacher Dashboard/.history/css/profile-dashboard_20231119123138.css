@@ -1,0 +1,40 @@
+.profile {
+    display: flex;
+    flex-direction: column; /* Adjust the direction to be column */
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: left 0px;;
+}
+
+.profile .top img {
+    width: 100%;
+    border-radius: 50%; /* Make the image rounded */
+}
+
+.profile p {
+    font-size: 15px;
+    margin: 0; /* Reset default margin for p element */
+}
+
+/* Additional styles for the profile details in .top */
+.profile .top p, .profile .top small {
+    margin: 0; /* Reset default margin for p and small elements */
+}
+
+.profile .about{
+    margin:10px;
+    padding:5px;
+    margin-bottom: ;
+}

@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h2 {
+    font-size: 15px;
+
+}
+
+.img-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    flex-shrink: 0;
+    /*kermel l image ma yn3amala enkemesh*/
+}
+
+.img-box img {
+    width: 100%;
+
+}
+
+.menu {
+    background: #123;
+    width: 60px;
+    height: 100vh;
+    padding: 20px;
+    /*todotheeffectofthemenutobehiddenandopenautomaticaly,thiswillmaketheimagetobehiddenalsosoiputflex-shrink: 0;
+    */overflow: hidden;
+    /*anythingoutsidetheareaofthemenumakeithidden*/
+    transition: .5s;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+
+}
+
+ul li a:hover,
+.active {
+    background-color: #ffffff55;
+}
+
+.log-out {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a {
+    background-color: #f44949;
+}
+
+ul li a i {
+    font-size: 25px;
+}
+
+.content{
+    width: 100%;
+    margin: 10px;
+}
+
+.title-info{
+    background-color:#f44949;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-radius:8px;
+    margin:10px 0;
+
+}
+
+/*  cards  */
+
+.card{
+    background-color:#f44949;
+    position: relative;
+    width: 350ox;
+    height: 85px;
+    border-radius:20px;
+    filter: drop-shadow(-20px 20px 40px #d32f2f);
+    transition: 0.5s ease-in-out;
+
+}
+
+.card.active{
+    height: 220px;
+}
+
+.toggle{
+    position: absolute;
+    bottom:-60px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 60px;
+    background-color:#f44949;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    cursor: pointer;
+}
+
+.toggle::before{
+    content:'';
+    position: absolute;
+    left: -34px;
+    width: 35px;
+    height: 35px;
+    background-color:transparent;
+    border-top-right-radius: 35px;
+    box-shadow: 11px -10px 0 10px #f44949;
+}
+
+.toggle::after{
+    content:'';
+    position: absolute;
+    right: -34px;
+    width: 35px;
+    height: 35px;
+    background-color:transparent;
+    border-top-left-radius: 35px;
+    box-shadow: -11px -10px 0 10px #f44949;
+}
+
+.toggle span{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -70%) rotate(405deg);
+    width: 10px;
+    height: 10px;
+    border-bottom:  3px solid #fff;
+    border-right:  3px solid #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.card.active .toggle span{
+    transform: translate(-50%, -70%) rotate(225deg);
+}
+
+.contentBx{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.contentBx .content-card{
+    position: relative;
+    padding:20px;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.contentBx .content-card h3{
+    color:#fff;
+    font-weight: 500;
+    font-size: 1.28em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1em;
+}
+
+.contentBx .content-card h3 span{
+    font-size: 0.65em;
+    font-weight: 400;
+    text-transform: initial;
+}
+
+.imgBx{
+    position: relative;
+    width
+}

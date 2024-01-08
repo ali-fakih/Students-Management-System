@@ -1,0 +1,52 @@
+/* Profile section  */
+aside .profile{
+    margin-top: 2rem;
+    width: 13rem;
+    position: fixed;
+}
+aside .profile .top{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 1rem;
+}
+aside .profile .top:hover .profile-photo{
+    scale: 1.05;
+}
+aside .profile .top .profile-photo{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--color-light);
+    transition: all 400ms ease;
+}
+aside .profile .about p{
+    padding-bottom: 1rem;
+}
+aside .profile .about{
+    margin-top: 1rem;
+}
+
+
+
+
+
+/* Right  */
+.right{margin-top: 2.2rem;padding-left: 1.5rem;}
+
+.right .announcements h2{margin-bottom: .8rem;}
+.right .announcements .updates{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+.right .announcements .updates:hover{box-shadow: none;}
+.right .announcements .updates .message{
+    gap: 1rem;
+    line-height: 1.5;
+    padding: .5rem 0;
+}

@@ -1,0 +1,129 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    color: #f44949;
+    margin-bottom: 5px;
+}
+
+/*-------------------------
+  Table section starts
+---------------------------*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #171822;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+td{
+    color:#f44949;
+}
+
+th {
+    background-color: #f44949;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+.fas fa-pencil-alt{
+    background-color:trasnparent;
+}
+
+/*---------------------
+ Table section ends
+-----------------------*/
+
+/*-----------------------------
+ Announcment Section starts
+-------------------------------*/
+.right{
+    margin-top: 2.2rem;
+    padding-left: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .right {
+    overflow-y: auto; /* This will add a vertical scrollbar if the content overflows */
+    max-height: 300px; /* Adjust the max-height as needed */
+}
+
+.announcements {
+    margin-bottom: 20px; /* Add some spacing between announcement sections */
+}
+
+.updates {
+    padding: 10px; /* Add padding to the updates container */
+    border: 1px solid #ccc; /* Optional: Add a border to the updates container */
+}
+
+.message {
+    margin-bottom: 10px; /* Add some spacing between messages */
+}
+
+.right .announcements h2{
+    margin-bottom: .8rem;
+}
+.right .announcements .updates{
+    padding: 10px;
+    box-shadow: 5px 4px 5px #f44949;
+    transition: all 300ms ease;
+    border:2px solid white;
+    border-end-start-radius: 10px;
+    border-start-end-radius: 10px;
+}
+/* .right .announcements .updates:hover{
+    /* background-color:whitesmoke;
+ } */
+
+.right .announcements .updates .message{
+    gap: 1rem;
+    line-height: 1;
+    padding: .5rem 0;
+    text-align:center;
+    width: 200px;
+    margin-bottom: 10px;
+    height: 80px;
+}
+
+.message p{
+    color: #f44949;
+}
+.text-muted{
+    color:gray;
+}
+
+/*-----------------------------
+ Announcment Section ends
+-------------------------------*/
+
+
+

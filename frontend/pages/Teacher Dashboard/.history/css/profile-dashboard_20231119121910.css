@@ -1,0 +1,34 @@
+/* Your existing CSS styles */
+
+.container {
+    display: grid;
+    width: 93%;
+    margin: 0 3rem;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+    padding-top: 4rem;
+}
+
+aside .profile {
+    margin-top: 2rem;
+    width: 13rem;
+    position: fixed;
+}
+
+aside .profile .top {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: 1rem;
+}
+
+aside .profile .info {
+    padding-left: 1rem; /* Add padding to separate info from the image */
+}
+
+aside .profile .about {
+    margin-top: 1rem;
+}
+
+/* Add other styles as needed */
